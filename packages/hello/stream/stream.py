@@ -12,7 +12,7 @@ def stream(args):
                 for c in inp:
                     msg = {"output": "Char '%c' ASCII %d\n" %(c, ord(c))} 
                     s.sendall(json.dumps(msg).encode('utf-8'))
-                    time.sleep(1)
+                    time.sleep(0.1)
                 s.sendall(b"{}")
         except:
             pass

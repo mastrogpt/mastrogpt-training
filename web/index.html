@@ -19,22 +19,19 @@
         window.onload = () => {
             const iframe = document.querySelector('iframe');
             setTimeout(() => {
-                iframe.contentWindow.postMessage({
+                const msg = {
                     type: 'metadata',
-                    data: {
-                        namespace: 'testuser'
-                    }
-                }, 'http://pinocchio.localhost');
+                    data: { namespace: 'testuser' }
+                };
+                iframe.contentWindow.postMessage(msg, 'https://pinocchio3.mistergpt.app');
             }, 500);
-
-
         };
     </script>
 
 </head>
 
 <body>
-    <iframe src="http://pinocchio.localhost"></iframe>
+    <iframe src="https://pinocchio3.mistergpt.app"></iframe>
 </body>
 
 </html>

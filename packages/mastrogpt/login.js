@@ -1,11 +1,11 @@
 //--web true
-//--param minio_key $TESTUSER_SECRET_MINIO
+//--param s3_key $S3_SECRET_KEY
 function main(args) {
     return {
         statusCode: 200,
         body: {
             authenticated: true,
-            minio_key: args.minio_key,
+            s3_key: args.s3_key,
         }
     }
 }
