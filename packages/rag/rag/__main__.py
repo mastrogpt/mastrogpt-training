@@ -8,6 +8,8 @@
 #--param MILVUS_PORT $MILVUS_PORT
 #--param MILVUS_DB_NAME $MILVUS_DB_NAME
 #--param MILVUS_TOKEN $MILVUS_TOKEN
+#--param ZILLIZ_HOST $ZILLIZ_HOST
+#--param ZILLIZ_TOKEN $ZILLIZ_TOKEN
 
 import rag
 def main(args):
