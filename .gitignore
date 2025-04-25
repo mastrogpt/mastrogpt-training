@@ -13,3 +13,4 @@ milvus/volumes/
 docs/
 .envrc
 .wskprops
+_*
