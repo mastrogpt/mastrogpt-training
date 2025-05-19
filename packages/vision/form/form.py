@@ -1,10 +1,10 @@
 import os, requests as req
-import vision
+import vision2 as vision
 
 USAGE = "Please upload a picture and I will tell you what I see"
 FORM = [
   {
-    "label": "any pics?",
+    "label": "Load Image",
     "name": "pic",
     "required": "true",
     "type": "file"

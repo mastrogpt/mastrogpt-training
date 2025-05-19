@@ -4,6 +4,7 @@
 [submodule "olaris-ai"]
 	path = olaris-ai
 	url = git@github.com:mastrogpt/olaris-ai
+        branch = main
 [submodule "nuvools"]
 	path = nuvools
 	url = git@github.com:nuvolaris/nuvools
