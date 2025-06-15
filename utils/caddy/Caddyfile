@@ -1,0 +1,39 @@
+{
+	email michele@nuvolaris.io
+}
+:80 {
+	redir https://{host}{uri} permanent
+}
+
+ollamatest.nuvolaris.io {
+	reverse_proxy http://127.0.0.1:11434 {
+		header_up -Host
+	}
+	log {
+		output file /var/log/caddy/ollama.log
+	}
+	basic_auth * {
+		import _users.caddy
+	}
+}
+
+ollama.nuvolaris.io {
+	log {
+		output file /var/log/caddy/ollamatest.log
+	}
+	
+	@allowed {
+		remote_ip 49.13.73.40 159.69.176.91 89.241.118.54 87.13.130.232
+	}
+
+	handle @allowed {
+		reverse_proxy http://127.0.0.1:11434 {
+			header_up -Host
+		}
+	}
+
+	handle {
+		respond "Access denied" 403
+	}
+
+}
