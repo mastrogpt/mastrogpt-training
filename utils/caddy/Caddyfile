@@ -19,11 +19,11 @@ ollamatest.nuvolaris.io {
 
 ollama.nuvolaris.io {
 	log {
-		output file /var/log/caddy/ollamatest.log
+		output file /var/log/caddy/ollama.log
 	}
 
 	@allowed {
-		remote_ip 49.13.73.40 159.69.176.91 89.241.118.54 87.13.130.232 66.249.73.166 93.35.144.100
+		remote_ip 49.13.73.40 159.69.176.91 89.241.118.54 87.13.130.232 66.249.73.166 93.35.144.100 95.245.159.139 80.41.221.88
 	}
 
 	@valid_api_key {
@@ -33,6 +33,7 @@ ollama.nuvolaris.io {
 	handle @allowed {
 		reverse_proxy http://127.0.0.1:11434 {
 			header_up -Host
+                        header_up -Origin
 		}
 	}
 
