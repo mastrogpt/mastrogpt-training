@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -22,7 +33,9 @@ html: true
 ## Stateful Assistant & OpenAI API 
 
 ---
-![bg left:50% 80%](assets/mastrogpt.png)
+<div class="title">OpenAI API</div>
+
+---
 
 ## Stateful Assistant & OpenAI API 
 
@@ -37,7 +50,7 @@ html: true
 ---
 
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=OpenAI+API)
+<div class="title">OpenAI API</div>
 
 ---
 
@@ -127,7 +140,7 @@ for m in res:
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Chat+Class)
+<div class="title">OpenAI API</div>
 
 ---
 
@@ -180,7 +193,7 @@ ch.messages
  
  ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Redis)
+<div class="title">Redis</div>
 
 ---
 
@@ -231,7 +244,7 @@ for item in rd.lrange(f"{prefix}list", 0, -1):
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Assistant)
+<div class="title">Assistant</div>
 
 ---
 

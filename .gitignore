@@ -14,3 +14,4 @@ docs/
 .envrc
 .wskprops
 _*
+.DS_Store

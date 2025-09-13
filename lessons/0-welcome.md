@@ -6,6 +6,17 @@ paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+  }
 html: true
 
 ---
@@ -21,7 +32,6 @@ html: true
 <center>
 <img width="100%"src="assets/mastrogpt.png">
 </center>
-
 
 ---
 
@@ -121,26 +131,24 @@ ok: updated action mastrogpt/login
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=Support)
+<div class="title">Support</div>
 
 ---
 
 ![bg](assets/architecture.png)
 
 ---
-
-![bg right:50% 70%](assets/mastrogpt-request.png)
-#### How to get an account?
+# How to get a development account?
 
 Free accounts by Nuvolaris on  `openserverless.dev` 
-  - Ask for an account on https://mastrogpt.com
+  
   - Contact us Linkedin, Discord, Email...
 
-#### <!--fit--> https://linkedin.com/in/msciab
+##  https://linkedin.com/in/msciab
 
 You can also self-host it, info: 
 
-##### <!--fit--> https://openserverless.apache.org
+##  https://openserverless.apache.org
 
 ---
 
@@ -161,13 +169,17 @@ You can also self-host it, info:
 
 
 ---
-
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=What+is+next?)
-
----
 # <!--fit-->  Select a lesson to download
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ![bg 90%](assets/lessons.png)
 
 
-
+# What is next?

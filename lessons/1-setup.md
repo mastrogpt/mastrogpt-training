@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -41,7 +52,7 @@ html: true
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Integrated+Services)
+<div class="title">Integrated Services</div>
 
 
 ---
@@ -68,12 +79,12 @@ html: true
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=Examples:+the+"hello"s)
+<div class="title">Examples: the "hello"s</div>
 
 ---
 ![bg right:50% 90%](1-setup/ollama.png)
 
-# `hello/llm` 
+# `hello/llm`
 
 - Access to the LLM
 - Ollama with
@@ -131,7 +142,8 @@ html: true
 
 
 ---
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=CLI+Tools)
+
+<div class="title">CLI Tools</div>
 
 --- 
  
@@ -194,7 +206,7 @@ ops ai new             # create a new service
 ```
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=Exercise:+reverse)
+<div class="title">Exercise: reverse</div>
 
 
 ---
@@ -210,8 +222,7 @@ ops ai new             # create a new service
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=About+Nuvolaris)
-
+<div class="title">About Nuvolaris</div>
 
 ---
 
@@ -223,7 +234,7 @@ ops ai new             # create a new service
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=What+is+Next?)
+<div class="title">What is Next?</div>
 
 
 ---

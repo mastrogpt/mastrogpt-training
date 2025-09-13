@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -23,22 +34,7 @@ html: true
 
 
 ---
-![bg left:50% 80%](assets/mastrogpt.png)
-
-## Vision and Storage
-
-- Analyzing Images
-
-- Vision Form action
-
-- Managing S3 Storage
-
-- Vision Store action
-
----
-
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Analyzing+Images)
-
+<div class="title">Analyzing Images</div>
 
 ---
 # Analizing an image with Ollama 1/3
@@ -97,7 +93,7 @@ for line in lines:
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Vision+Form+action)
+<div class="title">Vision Form action</div>
 
 ---
 
@@ -159,7 +155,7 @@ res['html'] = f'<img src="data:image/png;base64,{img}">'
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Managing+S3+Storage)
+<div class="title">Managing S3 Storage</div>
 
 ---
 # S3 Endpoints
@@ -242,7 +238,7 @@ client.delete_object(Bucket=bucket, Key='cat.jpg')
 
 ---
 
-![bg 90%](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Vision+Store)
+<div class="title">Vision Store</div>
 
 ---
 
@@ -293,6 +289,6 @@ Hints:
 - add the `bucket.py` module to the form
 - save the file after decoding it in base64
 - generate an unique name using the timestamp
-- change the htmo to use the value returned by `exturl` 
+- change the htmo to use the value returned by `exturl`
 
 

@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -34,7 +45,7 @@ html: true
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Implementing+a+RAG)
+<div class="title">Implementing a RAG</div>
 
 ---
 # RAG Concepts
@@ -47,8 +58,6 @@ html: true
 - You use your question to find relevant content
 
    - Embedding creates "semantic" vectors
-
-   - Search the relevant content with Vector Search
 
 ---
 
@@ -124,7 +133,7 @@ print(rag.llm(args, MODEL, context+question))
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=RAG+Loader)
+<div class="title">RAG Loader</div>
 
 ---
 ## RAG loader
@@ -145,7 +154,7 @@ Use `!![<collection>]` to remove `<collection>` and switch to default.
 - also test searches and remove content and collections
 
 ---
-![bg fit](7-rag/rag-loader.png)
+<div class="title">RAG Loader</div>
 
 ---
 
@@ -166,8 +175,7 @@ Use `--collection=<name>` to select collection
 Chunksize defaults to 4000
 
 ---
-
-![bg 90%](7-rag/rag-loader-cli.png)
+<div class="title">RAG Loader CLI</div>
 
 ---
 # RAG Loader code
@@ -186,7 +194,7 @@ VectorDB Class
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=RAG+Query)
+<div class="title">RAG Query</div>
 
 ---
 # RAG Query
@@ -206,22 +214,7 @@ with the sentences for an answer.
 ```
 
 ---
-
-![bg  70%](7-rag/rag-query.png)
-
-
----
-
-# RAG Query code
-
-Parser
-```
-code packages/rag/rag/rag.py -g 20
-```
-Action
-```
-code packages/rag/rag/rag.py -g 110
-```
+<div class="title">RAG Query</div>
 
 ---
 # Final Exercise
@@ -230,6 +223,7 @@ Modify the RAG loader to import images
 
 - Modify the Database to accept also an image
 
-- When an image is uploaded, process the image with image recognition and store its descritption
+- When an image is uploaded, process the image with image recognition and store its description
 
 - Modify the RAG to be able to find images by their description
+

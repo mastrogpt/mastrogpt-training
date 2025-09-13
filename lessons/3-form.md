@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -40,7 +51,7 @@ html: true
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Authentication)
+<div class="title">Authentication</div>
 
 ---
 ### Authentication
@@ -148,7 +159,7 @@ def auth(args):
 ```
 
 ---
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Form:+PostGen)
+<div class="title">Form: PostGen</div>
 
 ---
 # Form Field: a dictionary 
@@ -233,7 +244,7 @@ The tone of the post should be {data['tone']}.
 ```
 
 ---
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Display:+Puzzle)
+<div class="title">Display: Puzzle</div>
 
 ---
 ## How to implement a display?
@@ -286,7 +297,7 @@ def extract_fen(out):
 ### It is very common to extract output with regexps
 
 ---
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Exercise)
+<div class="title">Exercise</div>
 
 ---
 # Exercise: Custom Puzzle

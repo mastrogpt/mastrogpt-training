@@ -7,6 +7,17 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -33,10 +44,10 @@ html: true
 
 - Importing PDF
 
+
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Vector+Database)
-
+<div class="title">Vector Database</div>
 
 ---
 # Milvus: concepts
@@ -48,8 +59,6 @@ html: true
   - text is transformed in a numeric representatino using an **embedding model** then stored
 
 - Multiple **databases**, each database has multiple **collections**
-
-- Each collection has a **schema** and **indexes**
 
 ---
 
@@ -134,7 +143,7 @@ print(res[0].get("text"))
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Embedding)
+<div class="title">Embedding</div>
 
 ---
 
@@ -230,7 +239,7 @@ Looking at code
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=PDF+Import)
+<div class="title">PDF Import</div>
 
 ---
 
@@ -278,4 +287,4 @@ Hints:
 - use `BeautifulSoap (bs4)` to process the content and extract text
 - Tokenize text with regular expressions: 
 https://stackoverflow.com/questions/75253187/tokenizing-the-text-without-the-use-of-libraries
-    
+``````

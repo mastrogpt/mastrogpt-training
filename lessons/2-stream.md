@@ -7,6 +7,16 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 color: 266089
 html: true
+style:  |
+  .title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    font-size: 80px;
+    text-align: center;
+  }
 
 ---
 ![bg left:50% 70%](assets/nuvolaris-logo.png)
@@ -40,8 +50,7 @@ html: true
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Accessing+the+LLM)
-
+<div class="title">Accessing the LLM</div>
 
 ---
 # Getting credentials
@@ -119,7 +128,7 @@ Checking the code:
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=Managing+Secrets)
+<div class="title">Managing Secrets</div>
 
 ---
 
@@ -228,7 +237,7 @@ host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
 
 ---
 
-![bg](https://fakeimg.pl/700x400/ff0000,0/0A6BAC?retina=1&text=How+to+stream)
+<div class="title">How to stream</div>
 
 ---
 
@@ -354,8 +363,7 @@ ops ide deploy mastrogpt/index
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=Exercise:+Streaming+LLM)
-
+<div class="title">Exercise: Streaming LLM</div>
 
 ---
 
@@ -412,7 +420,7 @@ Bonus: fix `stream` to replace `<think>` with `[think]` (no hints)
 
 ---
 
-![bg](https://fakeimg.pl/350x200/ff0000,0/0A6BAC?retina=1&text=What+is+Next?)
+<div class="title">What is Next?</div>
 
 ---
 
