@@ -1,8 +1,33 @@
 {
 	email michele@nuvolaris.io
 }
+
 :80 {
 	redir https://{host}{uri} permanent
+}
+
+michele.ollama.n7s.co {
+    reverse_proxy http://127.0.0.1:11434 {
+		header_up -Host
+	}
+	log {
+		output file /var/log/caddy/ollama.log
+	}
+	basic_auth * {
+		import _users2.caddy
+	}
+}
+
+valtellina.ollama.n7s.co {
+    reverse_proxy http://127.0.0.1:11434 {
+		header_up -Host
+	}
+	log {
+		output file /var/log/caddy/ollama.log
+	}
+	basic_auth * {
+		import _users2.caddy
+	}
 }
 
 ollamatest.nuvolaris.io {
@@ -23,7 +48,7 @@ ollama.nuvolaris.io {
 	}
 
 	@allowed {
-		remote_ip 49.13.73.40 159.69.176.91 89.241.118.54 87.13.130.232 66.249.73.166 93.35.144.100 95.245.159.139 80.41.221.88
+		remote_ip 49.13.73.40 159.69.176.91 89.241.118.54 87.13.130.232 66.249.73.166 93.35.144.100 95.245.159.139 80.41.221.88 151.35.121.48 151.37.111.190
 	}
 
 	@valid_api_key {
@@ -33,7 +58,7 @@ ollama.nuvolaris.io {
 	handle @allowed {
 		reverse_proxy http://127.0.0.1:11434 {
 			header_up -Host
-                        header_up -Origin
+                header_up -Origin
 		}
 	}
 
