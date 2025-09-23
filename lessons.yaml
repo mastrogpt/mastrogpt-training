@@ -26,6 +26,8 @@
     - packages/hello/cache/cache.py
     - packages/hello/llm/llm.py
     - packages/hello/llm/__main__.py
+    - packages/hello/sql/sql.py
+    - packages/hello/sql/__main__.py
     - packages/hello/store/__main__.py
     - packages/hello/store/store.py
     - packages/hello/vdb/embed.py

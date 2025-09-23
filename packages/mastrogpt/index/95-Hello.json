@@ -15,8 +15,12 @@
         "name": "S3",
         "url": "hello/store"
     },
+    {    "name": "SQL",
+         "url": "hello/sql"
+    },
     {
         "name": "Ollama",
         "url": "hello/llm"
     }
+  
 ]
