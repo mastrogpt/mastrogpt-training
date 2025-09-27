@@ -4,7 +4,7 @@ MODEL="llama3.1:8b"
 #MODEL="deepseek-r1:32b"
 
 def url(args):
-  ## NOTE! get also the protocol fro OLLAMA_PROTO (http or https) 
+  ## NOTE! get also the protocol from OLLAMA_PROTO (http or https) 
   ## WARNING: this has been changed after the video
   #TODO:E2.1
   host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
