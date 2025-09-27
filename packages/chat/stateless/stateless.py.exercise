@@ -4,11 +4,14 @@ MODEL="llama3.1:8b"
 #MODEL="deepseek-r1:32b"
 
 def url(args):
+  ## NOTE! get also the protocol from OLLAMA_PROTO (http or https) 
+  ## WARNING: this has been changed after the video
   #TODO:E2.1
   host = ...
   auth = ...
+  proto = ...
   #END TODO
-  base = f"https://{auth}@{host}"
+  base = f"{proto}://{auth}@{host}"
   return f"{base}/api/generate"
 
 import json, socket, traceback

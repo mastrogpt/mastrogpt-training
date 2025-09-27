@@ -2,13 +2,12 @@ import os, requests as req, json
 import socket, traceback, time
 
 def url(args, cmd):
-  apihost = args.get("OLLAMA_API_HOST", os.getenv("OLLAMA_API_HOST", ""))
-  if apihost == "":    
-    host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
-    auth =  args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
-    proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
-    apihost =  f"{proto}://{auth}@{host}"
-    print(f"apihost={apihost}")
+
+  host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
+  auth = args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
+  proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
+  apihost =  f"{proto}://{auth}@{host}"
+  print(f"apihost={apihost}")
 
   return f"{apihost}/api/{cmd}"
 

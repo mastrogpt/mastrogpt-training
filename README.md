@@ -28,7 +28,6 @@ You need an up and running instance of [Apache OpenServerless](https://openserve
 
 You can:
 -  Ask for a free development account on `openserverless.dev` courtesy of [Nuvolaris](http://nuvolaris.io). Contact us:
-   - on [MastroGPT.com](https://mastrogpt.nuvolaris.dev) using our chatbot
    - on [Linkedin](https://linkedin.com/in/msciab) sending a private message 
    - on [Discord](https://bit.ly/openserverless-discord) (contact **Michele Sciabarra**)
   
@@ -36,7 +35,7 @@ You can:
 
 ## Launch a codespace with this starter
 
-First, go to `https://github.com/mastrogpt/` then select the pinned `mastrogpt-starter` repo (you should already be here):
+Once you have your openserverless instance,  go to `https://github.com/mastrogpt/` then select the pinned `mastrogpt2-starter` repo (you should already be here):
 
 ![](lessons/assets/starter.png)
 
@@ -49,7 +48,6 @@ It takes a bit to download images and starts.
 Wait until you see the "openserverless icon", then click on the  OpenServerless Icon and finally, click on Login and put your credentials, as follows:
 
 ![](lessons/assets/environment.png)
-
 
 # Overview
 
