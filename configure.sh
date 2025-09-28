@@ -6,10 +6,10 @@ echo "=== MastroGPT Configuration ==="
 echo
 
 # Prompt for Ollama Host
-echo -n "Enter Ollama Host [default: host.docker.local:11434]: "
+echo -n "Enter Ollama Host [default: host.docker.internal:11434]: "
 read OLLAMA_HOST
 if [ -z "$OLLAMA_HOST" ]; then
-    OLLAMA_HOST="host.docker.local:11434"
+    OLLAMA_HOST="host.docker.internal:11434"
 fi
 
 # Prompt for Ollama Auth

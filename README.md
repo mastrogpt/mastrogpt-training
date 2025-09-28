@@ -38,6 +38,13 @@ Apply these settings? [y/N]: y
 
 **Be careful that local Ollama are `http` while cloud Ollama are usually `https`**
 
+Once you have ollama you need to pull at least the following as they are used in the examples:
+
+```
+ollama pull mxbai-embed-large:latest
+ollama pull llama3.1:8b
+```
+
 ## Using a different instance than OpenServerless
 
 You can self host it either [installing by yourself](https://openserverless.apache.org/docs/installation/) in cloud, or install a local instance of OpenServerless (miniops).
@@ -53,8 +60,6 @@ You can do this with the following commands:
 **NOTE** If you use a different instance than `openserverless.dev`, you have to specify it in the login form. If you use a local instance, use `http://miniops.me` (note the `http`). 
 
 ## Running the environment it locally
-
-
 
 You can clone the repo and start it and use it locally instead of running it in codespace.
 However when you open it with codespace **you have to start the devcontainer**
