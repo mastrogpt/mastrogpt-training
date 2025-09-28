@@ -7,10 +7,10 @@ def url(args):
   ## NOTE! get also the protocol from OLLAMA_PROTO (http or https) 
   ## WARNING: this has been changed after the video
   #TODO:E2.1
-  host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
-  auth = args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
-  proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
+  host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
+  auth = args.get("AUTH", os.getenv("AUTH"))
   #END TODO
+  proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO", "https"))
   base = f"{proto}://{auth}@{host}"
   return f"{base}/api/generate"
 

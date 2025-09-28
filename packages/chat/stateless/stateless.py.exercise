@@ -9,8 +9,8 @@ def url(args):
   #TODO:E2.1
   host = ...
   auth = ...
-  proto = ...
   #END TODO
+  proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO", "https"))
   base = f"{proto}://{auth}@{host}"
   return f"{base}/api/generate"
 

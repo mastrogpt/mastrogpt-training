@@ -12,9 +12,9 @@ def collect(lines):
 
 class Vision:
   def __init__(self, args):
-    host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
-    auth = args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
-    proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
+    host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
+    auth = args.get("AUTH", os.getenv("AUTH"))
+    proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO", "https"))
     self.url = f"{proto}://{auth}@{host}/api/chat"
 
   def decode(self, img):

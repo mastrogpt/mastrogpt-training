@@ -14,9 +14,9 @@ class VectorDB:
       db_name = args.get("MILVUS_DB_NAME", os.getenv("MILVUS_DB_NAME"))
       self.client =  MilvusClient(uri=uri, token=token, db_name=db_name)
 
-      host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
-      auth = args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
-      proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
+      host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
+      auth = args.get("AUTH", os.getenv("AUTH"))
+      proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO", "https")) 
       self.url = f"{proto}://{auth}@{host}/api/embeddings"
 
       self.collections = self.client.list_collections()

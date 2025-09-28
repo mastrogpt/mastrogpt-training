@@ -1,5 +1,6 @@
 #--kind python:default
 #--web true
+#--param "OLLAMA_PROTO" "$OLLAMA_PROTO"
 #TODO:E2.1
 #--...
 #--...

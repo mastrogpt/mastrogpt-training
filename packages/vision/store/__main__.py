@@ -1,10 +1,8 @@
 #--kind python:default
 #--web true
+#--param "OLLAMA_PROTO" "$OLLAMA_PROTO"
 #--param "OLLAMA_HOST" "$OLLAMA_HOST"
 #--param "AUTH" "$AUTH"
-#--param "OLLAMA_HOSTPORT" "$OLLAMA_HOSTPORT"
-#--param "OLLAMA_AUTH" "$OLLAMA_AUTH"
-#--param "OLLAMA_PROTO" "$OLLAMA_PROTO"
 #--param S3_HOST $S3_HOST
 #--param S3_PORT $S3_PORT
 #--param S3_ACCESS_KEY $S3_ACCESS_KEY
