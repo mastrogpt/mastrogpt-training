@@ -3,8 +3,8 @@ import socket, traceback, time
 
 def url(args, cmd):
 
-  host = args.get("OLLAMA_HOSTPORT", os.getenv("OLLAMA_HOSTPORT")) or args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
-  auth = args.get("OLLAMA_AUTH", os.getenv("OLLAMA_AUTH")) or args.get("AUTH", os.getenv("AUTH"))
+  host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
+  auth =  args.get("AUTH", os.getenv("AUTH"))
   proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO")) or "https"
   apihost =  f"{proto}://{auth}@{host}"
   print(f"apihost={apihost}")
