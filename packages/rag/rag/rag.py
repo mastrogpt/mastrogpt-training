@@ -5,7 +5,7 @@ import vdb
 MODELS = {
   "P": "phi4:14b",
   "L": "llama3.1:8b",
-  "M": "mistral:latest"
+  "M": "mistral:7b"
 }
 
 USAGE = """

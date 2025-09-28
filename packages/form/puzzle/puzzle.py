@@ -1,5 +1,6 @@
 import re, os, requests as req
 #MODEL = "llama3.1:8b"
+#MODEL="mistral:7b"
 MODEL = "phi4:14b"
 
 def chat(args, inp):

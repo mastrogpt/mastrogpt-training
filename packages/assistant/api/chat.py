@@ -1,8 +1,6 @@
 import os
 import openai
 
-from tests.streamock import args
-
 MODEL = "llama3.1:8b"
 ROLE = "system:You are an helpful assistant."
 

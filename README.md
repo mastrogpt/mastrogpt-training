@@ -43,6 +43,9 @@ Once you have ollama you need to pull at least the following as they are used in
 ```
 ollama pull mxbai-embed-large:latest
 ollama pull llama3.1:8b
+ollama pull mistral:7b
+ollama pull phi4:14b
+ollama pull llama3.2-vision:11b
 ```
 
 ## Using a different instance than OpenServerless

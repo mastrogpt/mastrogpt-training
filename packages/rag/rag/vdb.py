@@ -18,6 +18,7 @@ class VectorDB:
       auth = args.get("AUTH", os.getenv("AUTH"))
       proto = args.get("OLLAMA_PROTO", os.getenv("OLLAMA_PROTO", "https")) 
       self.url = f"{proto}://{auth}@{host}/api/embeddings"
+      print(self.url)
 
       self.collections = self.client.list_collections()
 

@@ -1,8 +1,6 @@
 import os, requests as req
 from pymilvus import MilvusClient, DataType
 
-from tests.streamock import args
-
 MODEL="mxbai-embed-large:latest"
 DIMENSION=1024
 LIMIT=10

@@ -29,6 +29,7 @@ def store(args):
     ls = buc.find(inp[1:])
     if len(ls) > 0:
       key = ls[0]
+      print(key)
       out = f"Looking at {key}, I see:\n"
       data = buc.read(key)
       img = base64.b64encode(data).decode("utf-8")

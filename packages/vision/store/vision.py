@@ -1,7 +1,5 @@
 import os, json, requests as req
 
-from tests.streamock import args
-
 MODEL = "llama3.2-vision:11b"
 
 def collect(lines):

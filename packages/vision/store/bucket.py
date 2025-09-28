@@ -66,6 +66,7 @@ class Bucket:
           name = obj['Key']
           if name.find(sub) != -1:
             ls.append(name)
+      print(res)
       return ls
 
 
