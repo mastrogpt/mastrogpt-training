@@ -1,9 +1,4 @@
 {
-
-    "python.defaultInterpreterPath": "${env:HOME}/.ops/miniconda3/bin/python",
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+  "python.defaultInterpreterPath": "${env:HOME}/.ops/olaris-lv/.venv/bin/python",
+  "npm.packageManager": "npm"
 }

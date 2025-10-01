@@ -10,13 +10,18 @@
     "start": "ops ide devel",
     "test": "pytest",
     "cli": "npx ops ai cli",
-    "chat": "npx ops ai chat"
+    "chat": "npx ops ai chat",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "openserverlessold": {
-		"devel": "npm run dev",
-		"deploy": "npm run build"
-	}
+    "devel": "npm run dev",
+    "deploy": "npm run build"
+  },
+  "openserverless": {
+    "devel": "npm run dev",
+    "deploy": "npm run build"
+  }
 }
